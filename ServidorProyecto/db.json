@@ -1,0 +1,137 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "andres",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "pablo",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "kike",
+      "password": "1234"
+    },
+    {
+      "username": "prueba",
+      "password": "1234",
+      "id": 5
+    }
+  ],
+  "articulos": [
+    {
+      "id": 1,
+      "nombre": "Tabla QuickSilver naranja",
+      "precio": 200,
+      "imagen": "img/tabla1.png",
+      "referencia": "A1"
+    },
+    {
+      "id": 2,
+      "nombre": "Tabla QuickSilver Celeste",
+      "precio": 180,
+      "imagen": "img/tabla2.png",
+      "referencia": "A2"
+    },
+    {
+      "id": 3,
+      "nombre": "Tabla QuickSilver Marron",
+      "precio": 150,
+      "imagen": "img/tabla3.png",
+      "referencia": "A3"
+    },
+    {
+      "id": 4,
+      "nombre": "Tabla QuickSilver Rosa",
+      "precio": 120,
+      "imagen": "img/ta.png",
+      "referencia": "A4"
+    },
+    {
+      "id": 5,
+      "nombre": "Aletas F-One",
+      "precio": 50,
+      "imagen": "img/aletas2.png",
+      "referencia": "A5"
+    },
+    {
+      "id": 6,
+      "nombre": "Aletas buceo",
+      "precio": 20,
+      "imagen": "img/aletas3.png",
+      "referencia": "A6"
+    },
+    {
+      "id": 7,
+      "nombre": "Aletas tabla",
+      "precio": 90,
+      "imagen": "img/aletas1.png",
+      "referencia": "A7"
+    },
+    {
+      "id": 8,
+      "nombre": "Traje rojo y negro",
+      "precio": 80,
+      "imagen": "img/traje1.png",
+      "referencia": "A8"
+    },
+    {
+      "id": 9,
+      "nombre": "Traje azul",
+      "precio": 90,
+      "imagen": "img/traje2.png",
+      "referencia": "A9"
+    },
+    {
+      "id": 10,
+      "nombre": "Traje negro",
+      "precio": 100,
+      "imagen": "img/traje3.png",
+      "referencia": "A10"
+    },
+    {
+      "id": 11,
+      "nombre": "Traje azul y negro",
+      "precio": 60,
+      "imagen": "img/tr.png",
+      "referencia": "A11"
+    },
+    {
+      "id": 12,
+      "nombre": "Pack surf 1",
+      "precio": 200,
+      "imagen": "img/pack1.png",
+      "referencia": "A12"
+    },
+    {
+      "id": 13,
+      "nombre": "Pack surf 2",
+      "precio": 350,
+      "imagen": "img/pack2.png",
+      "referencia": "A13"
+    },
+    {
+      "id": 14,
+      "nombre": "Escarpin surf",
+      "precio": 40,
+      "imagen": "img/es.png",
+      "referencia": "A14"
+    },
+    {
+      "id": 15,
+      "nombre": "Escarpin surf sealand",
+      "precio": 60,
+      "imagen": "img/esc2.png",
+      "referencia": "A15"
+    }
+  ],
+  "carrito": []
+}

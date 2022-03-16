@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div class="cont">
+        <div class="formPutada">
+            <fieldset>
+                <legend>REGISTRO</legend>
+                <p>
+                    <input type="text" placeholder="USUARIO" id="usu" required />
+                </p>
+                <p>
+                    <input type="password" placeholder="CONTRASEÑA" id="pas" required />
+                </p>
+                <p>Vuelve a introducir la contraseña:</p>
+                <p>
+                    <input type="password" placeholder="CONTRASEÑA" id="pas2" required />
+                </p>
+                <p>
+                    <!-- <button type="submit">ENVIAR</button> -->
+                    <button onclick="obtenerUsuarios(document.getElementById('usu').value, document.getElementById('pas').value,document.getElementById('pas2').value)">CREAR</button>
+                </p>
+            </fieldset>
+        </div>
+        <div class="ayuda">
+
+
+
+        </div>
+    </div>
+
+
+    <footer id="footer"></footer>
+    <!---- ---- SCRIPT ---- ---->
+    <script>
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    </script>
+    <script src="/scripts/registro.js"></script>
+</body>
+
+</html>

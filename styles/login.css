@@ -1,0 +1,135 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #53b7e9;
+  font-size: 16px;
+  overflow-x: hidden;
+  cursor: url(../img/cursor.png), auto;
+  
+  
+}
+
+#registro{
+  margin-left: 36%;
+}
+.formPutada {
+  margin: 20px auto;
+  padding: 5px;
+  text-align: center;
+  width: 220px;
+  border: 2px solid #54889e;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+}
+fieldset {
+  padding: 5px;
+  border: none;
+}
+legend {
+  padding: 2px;
+  font-weight: bold;
+}
+input {
+  padding: 3px 0px;
+  margin: 5px 0px;
+  border: 2px solid #507383;
+  border-radius: 7px;
+}
+input::placeholder {
+  text-align: center;
+}
+.formPutada button {
+  font-weight: 500;
+  padding: 3px 35px;
+  font-family: Helvetica;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 7px;
+  width: 145px;
+  height: 26px;
+  border: 2px solid #8eb5c7;
+}
+.formPutada button:hover {
+  background-color: #53b7e9;
+  border: 2px solid #53b7e9;
+  color: white;
+}
+.validacion {
+  font-size: 12px;
+}
+/*----  ----CONTENEDOR----  ----*/
+/* .contenedor {
+  margin: 20px auto;
+  padding: 5px;
+  width: 90%;
+  border: 2px solid #54889e;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+} */
+.contenedor article {
+  padding: 5px;
+}
+.contenedor p {
+  padding: 3px;
+}
+/*---- ---- ESTILOS EQUIPOS ---- ----*/
+.formulario {
+  width: 90%;
+  text-align: center;
+  margin: 5% auto;
+  background-color: #f4f4f4;
+  border: 1px solid #507383;
+}
+
+.botones {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.botones button {
+  margin: 5px;
+}
+
+
+.ayuda {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 200px;
+  margin: auto;
+}
+.toast-container {
+  position: fixed;
+  width: 150px;
+  right: 50em;
+  top: 15em;
+  bottom: 0;
+  z-index: 10; /* sobre todo lo demás */
+}
+
+
+.fadeout{
+  opacity: 0;
+}
+
+.toast-toast {
+  font-size: 250%;
+  width: 500px;
+  height: 150px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  border: 1px rgb(0, 60, 128);
+  background: #36d4b2;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  line-height: 3;  
+  transition: all 0.5s;
+  -webkit-box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: 5px 5px 5px 0px #ffffff, inset 4px 4px 15px 0px #ffffff, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+}

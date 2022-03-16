@@ -1,0 +1,165 @@
+:root {
+  --main-color: black;
+  /*PARA LLAMAR A LA VARIABLE var(--main-bg-color)*/
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  cursor: url(../img/cursor.png), auto;
+}
+/*Elemento en el que se carga el header.html*/
+#header {
+  position: relative;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+}
+
+.catalogo img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+figcaption {
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 250px;
+  padding: 5px;
+  background-color: rgb(126, 158, 226);
+}
+
+.contenido {
+  width: 70%;
+  padding: 10px;
+  text-align: justify;
+  background-color: rgb(220, 245, 235);
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+iframe {
+  margin-top: 20px;
+
+  margin-left: 150px;
+}
+
+@media (max-width: 1350px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .contenido {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    order: -1;
+  }
+
+  .catalogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(126, 158, 226);
+    height: 200px;
+    width: 95%;
+    margin: 20px;
+  }
+
+  .catalogo img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 630px) {
+  .catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 48em = 768px */
+/*El ul ocupa 583px + logo*/
+@media (min-width: 1027px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 10px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1027px) {
+  #d1 {
+    display: none;
+  }
+  .header {
+    background-color: rgb(91, 176, 247);
+    width: 100%;
+  }
+  .header li a {
+    margin: auto;
+    text-align: center;
+  }
+
+  ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+  }
+}

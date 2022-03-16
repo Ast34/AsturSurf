@@ -1,0 +1,33 @@
+body {
+  overflow-x: hidden;
+  cursor: url(../img/cursor.png), auto;
+}
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+section {
+  background-color: rgb(126, 158, 226);
+}
+audio {
+  /*No funciona*/
+  background-image: url("/img/catalogo-1.png");
+}
+.texto {
+  width: 90%;
+  margin: auto;
+}
+
+.bloque {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  min-height: 100px;
+}
+#btn-video {
+  padding: 4px;
+}
