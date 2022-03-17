@@ -4,7 +4,6 @@ var infoUser = document.getElementById("validacion");
 var recuperar = document.getElementById("recupera");
 recuperar.style.visibility="hidden"
 var nombreu = document.getElementById("nombreusuario");
-
 function getUser() {
   var xmlhttp = new XMLHttpRequest();
   var url = "http://localhost:3001/usuarios";
@@ -24,12 +23,14 @@ function getUser() {
     var userExist = false;
     var userValid = false;
     var idUsuario;
+    var nombreUsuario;
     for (let i = 0; i < Object.keys(arr).length; i++) {
       /*Recorre la array y hace una copia en listado */
       listado += arr[i].username + " - " + arr[i].password;
       if (arr[i].username == usuario.value) {
         /*Comprueba si existe el usuario */
         userExist = true;
+        nombreUsuario=arr[i].username;
         if (arr[i].password == contra.value) {
           /*Comprueba si el usuario es valido (Que la contraseña coincida) */
           userValid = true;
@@ -50,6 +51,7 @@ function getUser() {
         //alert("INICIASTE SESIÓN");
         mensajeInicio();
         sessionStorage.setItem('idUsuario', idUsuario);
+        sessionStorage.setItem('nombreusuario', nombreUsuario);
         for (let i = 0; i < Object.keys(arr).length; i++) {
             if(arr[i].username == usuario.value){
               nombreu.innerHTML = arr[i].username;
@@ -76,6 +78,14 @@ function getUser() {
     console.info(listado);
   }
 
+
+  function Nombre(){
+    var usuario = sessionStorage.getItem("nombreusuario");
+    if(usuario != undefined){
+      nombreu.innerHTML = usuario;
+    }
+  }
+  Nombre();
 
 function mensajeInicio() {
   (function (window, document) { // asilamos el componente

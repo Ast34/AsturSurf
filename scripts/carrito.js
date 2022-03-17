@@ -5,6 +5,8 @@ if(usuario == undefined){
 }
 
 
+
+
 function obtenerCarrito() {
   /*llamada a articulos*/
   var xmlhttp = new XMLHttpRequest();

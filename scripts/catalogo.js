@@ -92,6 +92,8 @@ function Añadir(ref) {
     JSON.stringify({ referencia: ref.id, cantidad: 1, idusuario: usuario })
   );
 }
+
+
 /*  --PRUEBA-- */
 function obtenerCarrito(ref) { // es la que se llama en el boton
   //Nos traemos todo el carrito con los productos que haya
