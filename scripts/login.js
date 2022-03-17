@@ -50,14 +50,12 @@ function getUser() {
       if (userValid == true) {
         //alert("INICIASTE SESIÓN");
         mensajeInicio();
+        Nombre();
         sessionStorage.setItem('idUsuario', idUsuario);
         sessionStorage.setItem('nombreusuario', nombreUsuario);
-        for (let i = 0; i < Object.keys(arr).length; i++) {
-            if(arr[i].username == usuario.value){
-              nombreu.innerHTML = arr[i].username;
-            }
-       
-        }
+        
+              //nombreu.innerHTML = arr[i].username;
+         
       } else {
         sessionStorage.setItem('idUsuario', null);
       } 
@@ -78,14 +76,13 @@ function getUser() {
     console.info(listado);
   }
 
-
-  function Nombre(){
-    var usuario = sessionStorage.getItem("nombreusuario");
-    if(usuario != undefined){
-      nombreu.innerHTML = usuario;
-    }
+function Nombre(){
+  var usuario = sessionStorage.getItem("nombreusuario").charAt(0).toUpperCase();
+  if(usuario != undefined){
+    nombreu.innerHTML = usuario ;
   }
-  Nombre();
+}
+Nombre();
 
 function mensajeInicio() {
   (function (window, document) { // asilamos el componente

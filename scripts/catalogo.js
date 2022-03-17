@@ -30,7 +30,7 @@ function getArticulos() {
   xmlhttp.open('GET', url, true);
   xmlhttp.send();
 }
-
+/* AÑADIR CLASE AL BOTON GENERADO PARA PODER DARLE ESTILOS MAS FACIL */
 function getWebs(arr) {
   var listado = "";
   for (let i = 0; i < Object.keys(arr).length; i++) {
@@ -42,20 +42,17 @@ function getWebs(arr) {
       "<div class=info-articulo>" +
       arr[i].nombre +
       " " +
-      "<h1>" +
-      arr[i].referencia +
-      "</h1>" +
       "<p class=precio>" +
       arr[i].precio +
       "<span>" +
       "€" +
       "</span>" +
       "</p>" +
-      "<button id=" +
+      "<button class='btn-añadir' id=" +
       arr[i].referencia +
       " onclick=obtenerCarrito(" +
       arr[i].referencia +
-      ")>Añadir</button>" +
+      ")></button>" +
       "</div>" +
       "</div>";
   }
