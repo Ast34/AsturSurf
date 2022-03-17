@@ -19,11 +19,6 @@
       "id": 4,
       "username": "kike",
       "password": "1234"
-    },
-    {
-      "username": "prueba",
-      "password": "1234",
-      "id": 5
     }
   ],
   "articulos": [
@@ -133,5 +128,12 @@
       "referencia": "A15"
     }
   ],
-  "carrito": []
+  "carrito": [
+    {
+      "referencia": "A1",
+      "cantidad": 1,
+      "idusuario": "1",
+      "id": 1
+    }
+  ]
 }
