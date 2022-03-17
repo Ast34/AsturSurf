@@ -52,12 +52,7 @@ function getUser() {
         mensajeInicio();
         sessionStorage.setItem('idUsuario', idUsuario);
         sessionStorage.setItem('nombreusuario', nombreUsuario);
-        for (let i = 0; i < Object.keys(arr).length; i++) {
-            if(arr[i].username == usuario.value){
-              nombreu.innerHTML = arr[i].username;
-            }
-       
-        }
+        Nombre();
       } else {
         sessionStorage.setItem('idUsuario', null);
       } 
@@ -80,7 +75,7 @@ function getUser() {
 
 
   function Nombre(){
-    var usuario = sessionStorage.getItem("nombreusuario");
+    var usuario = sessionStorage.getItem("nombreusuario").charAt(0).toUpperCase;
     if(usuario != undefined){
       nombreu.innerHTML = usuario;
     }
