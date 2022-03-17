@@ -51,11 +51,11 @@ function getWebs(arr) {
       "€" +
       "</span>" +
       "</p>" +
-      "<button id=" +
+      "<button class='btn-añadir' id=" +
       arr[i].referencia +
       " onclick=obtenerCarrito(" +
       arr[i].referencia +
-      ")>Añadir</button>" +
+      ")></button>" +
       "</div>" +
       "</div>";
   }

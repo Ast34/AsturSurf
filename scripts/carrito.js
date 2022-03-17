@@ -64,16 +64,14 @@ function filtrarArticulos(arrCarrito, arrArticulo) {
             "<div>" +
             "<img src=" +
             arrArticulo[j].imagen +
-            "><p>" +
+            "><p id=nombre>" +
             arrArticulo[j].nombre +
-            " " +
-            arrArticulo[j].precio +
-            "€</p>" +
-            "<input type=placeholder id=valor"+n+"></input>"+
-            "<p>"+"Cantidad: "+arrCarrito[i].cantidad+"</p>"+
-            "<p>"+"Total articulo: "+arrArticulo[j].precio * arrCarrito[i].cantidad+"€"+"</p>"+
-            "<button id=" + arrCarrito[i].referencia+" onclick=Modificar(this,valor"+n+".value"+","+arrCarrito[i].id+")>Añadir / Quitar</button>" +
-            "<button id=" + arrCarrito[i].referencia+" onclick=eliminarItem("+arrCarrito[i].id+") >Eliminar</button>" +
+            "</p>" +
+            "<p id=cantidad>"+"Cantidad: "+arrCarrito[i].cantidad+   "<input class=modificarcant type=placeholder id=valor"+n+"></input>"+ "<button class=btn-modificar id=" + arrCarrito[i].referencia+" onclick=Modificar(this,valor"+n+".value"+","+arrCarrito[i].id+")></button>  </p>"+
+            "<p id=total>"+
+            "Total articulo: "+arrArticulo[j].precio * arrCarrito[i].cantidad+"€"+"    </p>"+
+           
+            "<button class=btn-eliminar id=" + arrCarrito[i].referencia+" onclick=eliminarItem("+arrCarrito[i].id+") ></button>" +
             "</div>";
             n++;
         }
@@ -115,9 +113,12 @@ function Modificar(ref,cant, ident){
     alert("Debes introducir una cantidad valida");
   }else { 
     alert("Cantidad modificada");
+
     http.send(JSON.stringify({ "referencia": ref.id, "cantidad": parseInt(cant), "idusuario": usuario  }));
+
   }
  
+  obtenerCarrito();
 
 }
 

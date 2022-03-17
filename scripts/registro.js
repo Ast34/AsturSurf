@@ -91,7 +91,7 @@ function getUsuarios(arrayusuarios,u,c,c2) {
 alert("Debes introducir todos los datos");
   } else if(flag==true){
     Añadir(u,c,c2);
-    mensajeInicio();
+  
   }
 
 }
