@@ -2,7 +2,9 @@ var usuario = document.getElementById("usu");
 var contra = document.getElementById("pas");
 var infoUser = document.getElementById("validacion");
 var recuperar = document.getElementById("recupera");
-recuperar.style.visibility="hidden"
+
+
+
 var nombreu = document.getElementById("nombreusuario");
 function getUser() {
   var xmlhttp = new XMLHttpRequest();
@@ -60,7 +62,7 @@ function getUser() {
         sessionStorage.setItem('idUsuario', null);
       } 
       if (!userValid == true) {
-        recuperar.style.visibility="visible"
+        recuperar.style.display="inline"
         console.info(" -ESTADO : Contraseña Incorrecta");
       }
     } else {

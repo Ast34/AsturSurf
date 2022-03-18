@@ -14,7 +14,8 @@ body {
 }
 
 #registro{
-  margin-left: 36%;
+margin: auto;
+margin-top: 10px;
 }
 .formPutada {
   margin: 20px auto;

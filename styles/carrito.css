@@ -9,6 +9,53 @@ body {
   overflow-x: hidden;
   cursor: url(../img/cursor.png), auto;
 }
+#cantidad{
+  margin-top: 10px;
+  background-color: rgba(9, 177, 255, 0.459);
+}
+.modificarcant {
+  width: 50px;
+  margin-left: 20px;
+}
+#nombre{
+  background-color:black;
+  color: white;
+}
+#total {
+  text-align: center;
+  background-color: rgba(9, 177, 255, 0.459);
+}
+.btn-modificar {
+  width: 32px;
+  height: 32px;
+  background: url("../img/carro.png");
+  border: none;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  margin-left: 15px;
+ 
+}
+.btn-modificar:hover {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.btn-eliminar {
+  width: 32px;
+  height: 32px;
+  background: url("../img/eliminar.png");
+  border: none;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  margin-left: 90px;
+
+ 
+}
+.btn-eliminar:hover {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
 
 .container {
   padding: 15px 100px 15px 100px;
@@ -25,13 +72,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.carrito button {
-  width: 100px;
-  height: 20px;
-  margin-left: 28%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+
 
 .carrito img {
   width: 200px;
