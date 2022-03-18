@@ -41,10 +41,6 @@ function getWebs(arr) {
       ">" +
       "<div class=info-articulo>" +
       arr[i].nombre +
-      " " +
-      "<h1>" +
-      arr[i].referencia +
-      "</h1>" +
       "<p class=precio>" +
       arr[i].precio +
       "<span>" +
