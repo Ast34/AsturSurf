@@ -3,16 +3,12 @@ var contra = document.getElementById("pas").value;
 var contra2 = document.getElementById("pas2").value;
 var infoUser = document.getElementById("validacion");
 
-
-
-
 function Añadir(u, c, c2) {
   var http = new XMLHttpRequest();
   var url = "http://localhost:3001/usuarios";
 
   http.open("POST", url, true);
   http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
 
   http.onreadystatechange = function () {
     if (http.readyState == 400 || http.status == 200) {
@@ -25,7 +21,6 @@ function Añadir(u, c, c2) {
   } else {
     alert("Las contraseñas no coinciden");
   }
-
   usuario.value = '';
   contra.value = '';
 }
@@ -61,7 +56,6 @@ function mensajeInicio() {
   }, 1200);
 
 }
-
 
 function obtenerUsuarios(u,c,c2) {
   /*llamada a usuarios*/
