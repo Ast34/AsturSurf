@@ -33,10 +33,9 @@ body {
   height: 400px;
   background-color: aqua;
   border-radius: 7px;
-  transition: 1s linear;
 }
 .contenido-catalogo:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .contenido-catalogo a {
   text-decoration: none;
@@ -65,7 +64,7 @@ body {
   background: url("../img/carrito.png");
   border: none;
   background-repeat: no-repeat;
-  object-fit: contain;
+  border: 1px solid white;
 }
 .btn-añadir:hover {
   border: 1px solid black;
